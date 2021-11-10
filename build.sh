@@ -1,4 +1,4 @@
-sudo su
+
 source ./.bashrc
 
 nasm -felf OS/kernel.asm -o kboot.o
