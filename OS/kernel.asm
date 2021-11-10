@@ -9,3 +9,4 @@ section .text
 
 _start:
     call    Kernel      
+    hlt
