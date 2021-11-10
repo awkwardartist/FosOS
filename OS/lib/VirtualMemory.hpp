@@ -22,7 +22,7 @@ public:
     static void Initialize() {
         memory_map mp;
         mp.Get(); // check memory values
-        map = mp;
+        
     }
 private:
     static memory_map map;
