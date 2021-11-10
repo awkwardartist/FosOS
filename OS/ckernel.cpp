@@ -3,5 +3,5 @@
 extern "C" void Kernel();
 
 void Kernel() {
-    Memory.Initialize();
+    Memory::Initialize();
 }
