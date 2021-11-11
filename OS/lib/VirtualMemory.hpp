@@ -1,8 +1,13 @@
 #pragma once
 #include "IO.hpp"
 
-struct memory_map {
+// the memory of the HOST, to be used in finding and allocating blocks of memory
+class Memory {
 public:
+    Memory() {
+        Get(); // get memory map
+    }
+private:
     unsigned char high_memory, low_memory;
     unsigned short total;
 
@@ -14,16 +19,4 @@ public:
 
         total = low_memory | high_memory << 8;
     }
-};
-// the memory of the HOST, to be used in finding and allocating blocks of memory
-class Memory {
-public:
-    
-    static void Initialize() {
-        memory_map mp;
-        mp.Get(); // check memory values
-        
-    }
-private:
-    static memory_map map;
 };
