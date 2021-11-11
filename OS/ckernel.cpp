@@ -1,7 +1,7 @@
-#include "VirtualMemory.hpp"
+#include "Memory.hpp"
 
 extern "C" void Kernel();
 
 void Kernel() {
-    Memory::Initialize();
+    
 }
