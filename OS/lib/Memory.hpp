@@ -20,11 +20,3 @@ public:
     }
 
 };
-
-class Memory {
-public:
-    void Allocate(VirtualBuffer v) {
-        this.v[i++] = v;
-    }
-    
-};
